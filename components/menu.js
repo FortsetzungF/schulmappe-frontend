@@ -1,6 +1,6 @@
 import NavItem from './navitem';
 
-export default function Menu({ children }) {
+export default function Menu() {
   return (
     <div className="font-ubuntu text-center 2xl:text-left">
       <ul className="divide-y divide-gray-500">

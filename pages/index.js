@@ -4,12 +4,12 @@ export default function Home() {
   return (
     <div>
       <Layout>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam sit
-        voluptatem molestiae cum? Labore neque reprehenderit mollitia fugiat at,
-        tenetur modi assumenda velit voluptatibus optio minima harum voluptas
-        officiis commodi aliquam laborum. Animi facilis voluptas nobis officiis
-        magnam dolore nulla officia amet minus? Corrupti nisi quos voluptas, non
-        beatae labore.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
+        dolore quo sint officiis, reiciendis, quibusdam voluptas error iste
+        animi numquam quasi quam architecto, iusto modi! Minus consequatur nulla
+        repudiandae illo iusto tenetur voluptates doloremque quae. At doloremque
+        error veritatis recusandae vitae reiciendis exercitationem ut
+        perspiciatis cupiditate, cum officia odit animi!
       </Layout>
     </div>
   );

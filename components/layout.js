@@ -1,9 +1,15 @@
 import Link from 'next/link';
+import Head from 'next/head';
+// import Warning from './warning';
 import Menu from './menu';
+import UploadForm from './uploadForm';
 
-export default function Layout({ children }) {
+export default function Layout({ children, home }) {
   return (
     <div>
+      <Head>
+        <title>schulmappe.</title>
+      </Head>
       <div className="m-2 2xl:mx-32 2xl:my-5 border-2 border-black">
         <div className="p-4 divide-y-2 divide-black">
           <header>
@@ -14,24 +20,27 @@ export default function Layout({ children }) {
                 </a>
               </Link>
             </h1>
+            {/* <Warning /> */}
           </header>
           <main>
             <div className="grid 2xl:grid-cols-7 gap-4 2xl:py-4 divide-y-2 2xl:divide-y-0 2xl:divide-x divide-black">
               <div className="2xl:col-span-1 px-4">
                 <Menu />
               </div>
-              <div className="2xl:col-span-4 text-xl py-4 2xl:px-4">
-                {children}
-              </div>
-              <div className="2xl:col-span-2 text-xl py-4 2xl:px-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                quae nam et, tempora totam saepe dignissimos vero officia
-                molestias, ipsa iste repudiandae recusandae, eius quis earum
-                vitae deserunt dolorum tenetur eos minima perspiciatis?
-                Obcaecati praesentium veniam corrupti sed! Placeat voluptatem
-                assumenda impedit laboriosam quibusdam omnis quae dignissimos
-                iste ipsum nemo.
-              </div>
+              {!home ? (
+                <>
+                  <div className="2xl:col-span-4 text-xl py-4 2xl:px-4">
+                    {children}
+                  </div>
+                  <div className="2xl:col-span-2 text-xl py-4 2xl:px-4">
+                    <UploadForm />
+                  </div>
+                </>
+              ) : (
+                <div className="2xl:col-span-6 text-xl py-4 2xl:px-4">
+                  {children}
+                </div>
+              )}
             </div>
           </main>
         </div>
