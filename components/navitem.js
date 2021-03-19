@@ -6,7 +6,11 @@ export default function NavItem({ children }) {
 
   return (
     <li className="text-xl py-1">
-      <Link href={link}>{children}</Link>
+      <Link href={link}>
+        <a className="hover:text-red-700 transition-colors duration-300">
+          {children}
+        </a>
+      </Link>
     </li>
   );
 }

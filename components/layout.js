@@ -1,17 +1,22 @@
+import Link from 'next/link';
 import Menu from './menu';
 
 export default function Layout({ children }) {
   return (
     <div>
       <div className="m-2 2xl:mx-32 2xl:my-5 border-2 border-black">
-        <div className="p-4 divide-y-2 divide-gray-700">
+        <div className="p-4 divide-y-2 divide-black">
           <header>
             <h1 className="text-4xl lg:text-5xl font-semibold font-ubuntu pb-4">
-              schulmappe.
+              <Link href="/">
+                <a className="hover:text-red-700 transition-colors duration-500">
+                  schulmappe.
+                </a>
+              </Link>
             </h1>
           </header>
           <main>
-            <div className="grid 2xl:grid-cols-7 gap-4 2xl:py-4 divide-y-2 2xl:divide-y-0 2xl:divide-x divide-gray-600">
+            <div className="grid 2xl:grid-cols-7 gap-4 2xl:py-4 divide-y-2 2xl:divide-y-0 2xl:divide-x divide-black">
               <div className="2xl:col-span-1 px-4">
                 <Menu />
               </div>
@@ -33,12 +38,13 @@ export default function Layout({ children }) {
       </div>
       <div className="relative h-8 2xl:h-5 text-center font-mono">
         <div className="absolute inset-x-0 bottom-2">
-          Made with ❤ by{' '}
           <a
-            href="https://fortsetzungf.vercel.app"
-            className="hover:text-red-700 transition-colors duration-500"
+            href="https://fortsetzungf.vercel.app/"
+            className="hover:text-red-700 transition-colors duration-300"
+            rel="noopener noreferrer"
+            target="_blank"
           >
-            FortsetzungF
+            Made with ❤ by FortsetzungF
           </a>
         </div>
       </div>
