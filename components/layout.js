@@ -29,15 +29,15 @@ export default function Layout({ children, home }) {
               </div>
               {!home ? (
                 <>
-                  <div className="2xl:col-span-4 text-xl py-4 2xl:px-4">
+                  <div className="2xl:col-span-4 text-xl py-4 2xl:py-0 2xl:px-4">
                     {children}
                   </div>
-                  <div className="2xl:col-span-2 text-xl py-4 2xl:px-4">
+                  <div className="2xl:col-span-2 text-xl py-4 2xl:py-0 2xl:px-4">
                     <UploadForm />
                   </div>
                 </>
               ) : (
-                <div className="2xl:col-span-6 text-xl py-4 2xl:px-4">
+                <div className="2xl:col-span-6 text-xl py-4 2xl:py-0 2xl:px-4">
                   {children}
                 </div>
               )}
@@ -45,7 +45,7 @@ export default function Layout({ children, home }) {
           </main>
         </div>
       </div>
-      <div className="relative h-8 2xl:h-5 text-center font-mono">
+      <div className="relative h-8 2xl:h-5 text-center font-mono font-semibold">
         <div className="absolute inset-x-0 bottom-2">
           <a
             href="https://fortsetzungf.vercel.app/"
@@ -53,8 +53,9 @@ export default function Layout({ children, home }) {
             rel="noopener noreferrer"
             target="_blank"
           >
-            Made with ❤ by FortsetzungF
-          </a>
+            FortsetzungF
+          </a>{' '}
+          & Privatchat!
         </div>
       </div>
     </div>

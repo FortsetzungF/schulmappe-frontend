@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 export default function Home() {
   return (
     <div>
-      <Layout>
+      <Layout home>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
         dolore quo sint officiis, reiciendis, quibusdam voluptas error iste
         animi numquam quasi quam architecto, iusto modi! Minus consequatur nulla
