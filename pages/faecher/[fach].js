@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
-import Head from 'next/head';
+import Image from 'next/image';
 import Layout from '../../components/layout';
+import Item from '../../components/item';
 
 export default function Fach() {
   const router = useRouter();
@@ -9,15 +10,23 @@ export default function Fach() {
   return (
     <div>
       <Layout>
-        <div className="divide-y divide-gray-500">
+        <div className="divide-y divide-black">
           <h1 className="text-3xl pb-2 font-ubuntu font-medium">{fach}.</h1>
-          <div className="py-2">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quae
-            obcaecati vitae dolorem aliquam rerum quas voluptatibus est? Sit
-            doloremque rem quo nihil possimus hic ullam. Error mollitia debitis
-            tempora esse quaerat, odit commodi voluptatem iusto quas magni
-            doloribus velit! Dolores, neque. Inventore consectetur suscipit
-            mollitia optio fuga, reiciendis quis.
+          <div className="py-4 2xl:p-4">
+            <Item>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Temporibus totam, ipsa dolorum aliquid asperiores tempora quo
+              excepturi minima suscipit voluptates perferendis praesentium
+              reiciendis accusamus vero odio hic sapiente. Cupiditate
+              repudiandae eveniet exercitationem deserunt culpa ipsa voluptate
+              ullam sit tempora odio, eum, quo quisquam, totam consectetur
+              voluptas labore optio minus reprehenderit?
+            </Item>
+            <Item>
+              Cupiditate repudiandae eveniet exercitationem deserunt culpa ipsa
+              voluptate ullam sit tempora odio, eum, quo quisquam, totam
+              consectetur voluptas labore optio minus reprehenderit?
+            </Item>
           </div>
         </div>
       </Layout>
