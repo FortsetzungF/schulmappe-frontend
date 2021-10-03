@@ -1,29 +1,43 @@
 import Link from 'next/link';
 import Head from 'next/head';
-// import Warning from './warning';
+import Warning from './warning';
 import Menu from './menu';
 import UploadForm from './uploadForm';
+import AccountHeader from "./acccountHeader";
 
 export default function Layout({ children, home }) {
   return (
-    <div>
-      <Head>
-        <title>schulmappe.</title>
-      </Head>
-      <div className="m-2 2xl:mx-32 2xl:my-5 border-2 border-black">
-        <div className="p-4 divide-y-2 divide-black">
+    <div className="dark:bg-black dark:text-white dark:border-white min-h-screen">
+
+      <div className="pt-5">
+        <Head>
+          <title>schulmappe.</title>
+        </Head>
+      </div>
+
+      <div className="mb-2 2xl:mx-32 2xl:mb-5 border-2 border-black dark:border-white">
+        <div className="p-4 divide-y-2 divide-black dark:divide-white">
           <header>
-            <h1 className="text-4xl lg:text-5xl font-semibold font-ubuntu pb-4">
-              <Link href="/">
-                <a className="hover:text-red-700 transition-colors duration-500">
-                  schulmappe.
-                </a>
-              </Link>
-            </h1>
+            <div className="relative">
+              <h1 className="text-4xl lg:text-5xl font-semibold font-ubuntu pb-4">
+                  <Link href="/">
+                    <a className="hover:text-red-700 transition-colors duration-500">
+                      schulmappe.
+                    </a>
+                  </Link>
+                </h1>
+
+                
+                <div className="absolute bottom-0 right-0 p-2 pr-0">
+                  <AccountHeader />
+                </div>
+            </div>
+
             {/* <Warning /> */}
+            
           </header>
           <main>
-            <div className="grid 2xl:grid-cols-7 gap-4 2xl:py-4 divide-y-2 2xl:divide-y-0 2xl:divide-x divide-black">
+            <div className="grid 2xl:grid-cols-7 gap-4 2xl:py-4 divide-y-2 2xl:divide-y-0 2xl:divide-x divide-black dark:divide-white">
               <div className="2xl:col-span-1 px-4">
                 <Menu />
               </div>
@@ -45,17 +59,9 @@ export default function Layout({ children, home }) {
           </main>
         </div>
       </div>
-      <div className="relative h-8 2xl:h-5 text-center font-mono font-semibold">
+      <div className="relative h-8 2xl:h-5 text-center uppercase font-ubuntu font-thin text-gray-500 dark:text-gray-300">
         <div className="absolute inset-x-0 bottom-2">
-          <a
-            href="https://fortsetzungf.vercel.app/"
-            className="hover:text-red-700 transition-colors duration-300"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            FortsetzungF
-          </a>{' '}
-          & Privatchat!
+            &copy; 2021 Privatchat!
         </div>
       </div>
     </div>

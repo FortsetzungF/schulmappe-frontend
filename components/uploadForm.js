@@ -1,6 +1,6 @@
 export default function UploadForm() {
   return (
-    <div className="divide-y divide-black">
+    <div className="divide-y divide-black dark:divide-white">
       <h2 className="text-3xl font-ubuntu pb-2">upload.</h2>
       <div className="py-4 2xl:px-2">
         <div className="border border-gray-500 p-2">
@@ -13,7 +13,7 @@ export default function UploadForm() {
             quaerat eligendi, dicta placeat! Accusantium cumque laudantium eius!
           </div>
           <div className="flex justify-center font-ubuntu font-semibold">
-            <button className="border-2 border-gray-500 py-2 px-3 self-center">
+            <button className="border border-gray-500 p-2 py-2 px-3 self-center">
               upload.
             </button>
           </div>
