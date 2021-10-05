@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Layout from '../components/layout';
-import NewsItem from "../components/NewsItem";
+import NewsItem from "../components/newsItem";
 
 export default function News() {
   return (
