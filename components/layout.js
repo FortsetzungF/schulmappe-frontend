@@ -9,7 +9,7 @@ export default function Layout({ children, home }) {
   return (
     <div className="dark:bg-black dark:text-white dark:border-white min-h-screen">
 
-      <div className="pt-5">
+      <div className="pt-0 2xl:pt-5">
         <Head>
           <title>schulmappe.</title>
         </Head>
@@ -20,7 +20,7 @@ export default function Layout({ children, home }) {
           <header>
             <div className="relative">
               <h1 className="text-4xl lg:text-5xl font-semibold font-ubuntu pb-4">
-                  <Link href="/">
+                  <Link href="/news">
                     <a className="hover:text-red-700 transition-colors duration-500">
                       schulmappe.
                     </a>
@@ -43,7 +43,7 @@ export default function Layout({ children, home }) {
               </div>
               {!home ? (
                 <>
-                  <div className="2xl:col-span-4 text-xl py-4 2xl:py-0 2xl:px-4">
+                  <div className="2xl:col-span-4 text-lg py-4 2xl:py-0 2xl:px-4">
                     {children}
                   </div>
                   <div className="2xl:col-span-2 text-xl py-4 2xl:py-0 2xl:px-4">
@@ -51,7 +51,7 @@ export default function Layout({ children, home }) {
                   </div>
                 </>
               ) : (
-                <div className="2xl:col-span-6 text-xl py-4 2xl:py-0 2xl:px-4">
+                <div className="2xl:col-span-6 text-lg py-4 2xl:py-0 2xl:px-4">
                   {children}
                 </div>
               )}

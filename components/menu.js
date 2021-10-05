@@ -7,7 +7,7 @@ export default function Menu() {
   const { data, error } = useSWR('/api/faecher', fetcher)
 
   if (error) return <div>failed to load faecher</div>
-  if (!data) return <div>failed to load faecher</div>
+  if (!data) return <div>loading faecher</div>
 
   return (
     <div className="font-ubuntu text-center 2xl:text-left ">

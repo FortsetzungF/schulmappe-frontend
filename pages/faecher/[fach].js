@@ -11,7 +11,7 @@ export default function Fach() {
   return (
     <div>
       <Layout>
-        <div className="divide-y divide-black">
+        <div className="divide-y divide-black dark:divide-white">
           <h1 className="text-3xl pb-2 font-ubuntu font-medium">{fach}.</h1>
           <div className="py-4 2xl:p-4">
             <Item>

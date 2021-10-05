@@ -3,7 +3,7 @@ export default function UploadForm() {
     <div className="divide-y divide-black dark:divide-white">
       <h2 className="text-3xl font-ubuntu pb-2">upload.</h2>
       <div className="py-4 2xl:px-2">
-        <div className="border border-gray-500 p-2">
+        <div className="border border-gray-500 p-2 dark:border-gray-300">
           <div className="mb-2">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
             consequatur, magnam rerum praesentium optio laboriosam assumenda est
