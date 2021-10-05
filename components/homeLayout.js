@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import Menu from './menu';
+import Footer from './footer';
 
 export default function Layout({ children, home }) {
   return (
@@ -35,11 +35,8 @@ export default function Layout({ children, home }) {
             </main>
         </div>
       </div>
-      <div className="relative h-8 2xl:h-5 text-center uppercase font-ubuntu font-thin text-gray-500 dark:text-gray-300">
-        <div className="absolute inset-x-0 bottom-2">
-            &copy; 2021 Privatchat!
-        </div>
-      </div>
+
+      <Footer />
     </div>
   );
 }
