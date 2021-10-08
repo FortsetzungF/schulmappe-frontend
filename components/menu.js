@@ -10,7 +10,7 @@ export default function Menu() {
   if (!data) return <div>loading faecher</div>
 
   return (
-    <div className="font-ubuntu text-center 2xl:text-left ">
+    <div className="font-ubuntu text-center lg:text-left ">
       <ul className="divide-y divide-gray-500 dark:divide-gray-500">
         {data.faecher.map((fach) => 
           <NavItem>{fach}</NavItem>
