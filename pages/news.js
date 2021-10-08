@@ -1,10 +1,9 @@
-import Link from "next/link";
 import Layout from '../components/layout';
 import NewsItem from "../components/newsItem";
 
 export default function News() {
-  return (
-    <div>
+	return (
+		<div>
 			<Layout home>
 				<div className="divide-y divide-black dark:divide-white">
 						<h1 className="text-3xl pb-2 font-ubuntu font-medium">news.</h1>
@@ -21,6 +20,6 @@ export default function News() {
 						</div>
 					</div>
 			</Layout>
-    </div>
-  );
+		</div>
+	);
 }
