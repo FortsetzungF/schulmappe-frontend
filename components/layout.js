@@ -21,7 +21,7 @@ export default function Layout({ children, home }) {
           <header>
             <div className="relative">
               <h1 className="text-4xl xl:text-5xl font-semibold font-ubuntu pb-4">
-                  <Link href="/news">
+                  <Link href="/app">
                     <a className="hover:text-red-700 transition-colors duration-500">
                       schulmappe.
                     </a>
