@@ -12,7 +12,7 @@ export default function Layout({ children, home }) {
         </Head>
       </div>
 
-      <div className="mb-2 2xl:mx-32 2xl:mb-5 border-2 border-black dark:border-white">
+      <div className="mb-2 2xl:mx-96 2xl:mb-5 border-2 border-black dark:border-white">
         <div className="p-4 divide-y-2 divide-black dark:divide-white">
           <header>
             <div className="relative">
@@ -24,15 +24,14 @@ export default function Layout({ children, home }) {
                   </Link>
                 </h1>
             </div>
-            
           </header>
-            <main>
-                <div className="2xl:py-4 divide-y-2 2xl:divide-y-0 2xl:divide-x divide-black dark:divide-white">
-                    <div className="text-xl xl:mx-96 py-4 2xl:py-0 2xl:px-4">
-                        {children}
-                    </div>
-                </div>
-            </main>
+          <main>
+              <div className="2xl:py-4 divide-y-2 2xl:divide-y-0 2xl:divide-x divide-black dark:divide-white">
+                  <div className="text-xl xl:mx-32 py-4 2xl:py-0 2xl:px-4">
+                      {children}
+                  </div>
+              </div>
+          </main>
         </div>
       </div>
 

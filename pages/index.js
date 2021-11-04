@@ -19,7 +19,7 @@ export default function Home() {
           error earum nulla esse. Aut iusto quae distinctio.
 
           <div className="text-center font-bold">
-            <Link href="news">
+            <Link href="app">
               <a className="hover:text-red-700 transition-colors duration-300">Übersicht</a>
             </Link>
           </div>
