@@ -11,6 +11,11 @@ export default function Footer() {
 						<a className="hover:text-red-700 transition-colors duration-500">bugs?</a>
 					</Link>
 				</span>
+		                <span className="pl-2 normal-case">
+					<Link href="jobs">
+						<a className="hover:text-red-700 transition-colors duration-500">jobs?</a>
+					</Link>
+				</span>
 			</div>
 		</div>
 	);
