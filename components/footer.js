@@ -12,7 +12,7 @@ export default function Footer() {
 					</Link>
 				</span>
 		                <span className="pl-2 normal-case">
-					<Link href="jobs">
+					<Link href="/jobs">
 						<a className="hover:text-red-700 transition-colors duration-500">jobs?</a>
 					</Link>
 				</span>
