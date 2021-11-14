@@ -8,7 +8,7 @@ export default function Layout({ children, home }) {
 
       <div className="pt-0 2xl:pt-5">
         <Head>
-          <title>schulmappe.</title>
+          <title>schulmappe. - BETA</title>
         </Head>
       </div>
 
@@ -22,6 +22,7 @@ export default function Layout({ children, home }) {
                       schulmappe.
                     </a>
                   </Link>
+                  <span className="font-thin text-2xl pl-4">BETA</span>
                 </h1>
             </div>
           </header>
