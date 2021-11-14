@@ -1,5 +1,5 @@
 import useSWR from 'swr'
-import NavItem from './navitem';
+import NavItem from '@components/navitem';
 
 export default function Menu() {
   const fetcher = (...args) => fetch(...args).then(res => res.json())

@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import Layout from '../../components/layout';
-import Item from '../../components/item';
+import Layout from '@components/layout';
+import Item from '@components/item';
 
 export default function Fach() {
 

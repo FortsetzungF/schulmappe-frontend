@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import Warning from './warning';
-import Menu from './menu';
-import UploadForm from './uploadForm';
-import AccountHeader from "./acccountHeader";
-import Footer from './footer';
+import Warning from '@components/warning';
+import Menu from '@components/menu';
+import UploadForm from '@components/uploadForm';
+import AccountHeader from "@components/acccountHeader";
+import Footer from '@components/footer';
 
 export default function Layout({ children, home }) {
   return (

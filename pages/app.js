@@ -1,5 +1,5 @@
-import Layout from '../components/layout';
-import NewsItem from "../components/newsItem";
+import Layout from '@components/layout';
+import NewsItem from "@components/newsItem";
 
 export default function News() {
 	return (
