@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Jobs() {
 	return (
 		<div className="dark:bg-black dark:text-white dark:border-white min-h-screen">
-      <div className="m-auto md:w-2/5 p-6 md:pt-24">
+      <div className="m-auto lg:w-2/5 p-6 lg:pt-24">
 			  <div>
           <h1 className="font-ubuntu font-semibold text-8xl md:text-8xl italic">Jobs?</h1>
           <p className="text-2xl italic font-semibold py-2 md:text-2xl md:py-4">
