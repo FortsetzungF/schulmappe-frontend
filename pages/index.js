@@ -1,8 +1,13 @@
+import Head from "next/head"
 import Link from "@components/Link";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white">
+      <Head>
+        <title>SCHULMAPPE.</title>
+      </Head>
+
       <div className="text-4xl lg:text-8xl font-bold uppercase">
         schulmappe
       </div>
