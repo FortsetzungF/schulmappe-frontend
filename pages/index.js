@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@components/Link";
 
 export default function Home() {
   return (
@@ -7,9 +7,7 @@ export default function Home() {
         schulmappe
       </div>
       <div className="lg:text-xl font-bold uppercase">
-        <Link href="/app">
-          <a className="hover:text-red-700 transition-colors duration-200">login</a>
-        </Link>
+        <Link href="/app">login</Link>
       </div>
     </div>
   )
