@@ -7,9 +7,9 @@ export default function Faecherlist() {
         <h2 className="text-2xl lg:text-4xl">faecher</h2>
       </div>
 
-      <FaecherlistItem>mathe.</FaecherlistItem>
-      <FaecherlistItem>physik.</FaecherlistItem>
-      <FaecherlistItem>informatik.</FaecherlistItem>
+      <FaecherlistItem>mathe</FaecherlistItem>
+      <FaecherlistItem>physik</FaecherlistItem>
+      <FaecherlistItem>informatik</FaecherlistItem>
     </div>
   )
 }
