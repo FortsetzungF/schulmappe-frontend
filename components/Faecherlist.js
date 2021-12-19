@@ -2,10 +2,14 @@ import FaecherlistItem from "@components/FaecherlistItem";
 
 export default function Faecherlist() {
   return(
-    <div className="font-extrabold italic uppercase">
-      <h2 className="text-2xl lg:text-4xl">faecher</h2>
+    <div>
+      <div className="font-extrabold italic uppercase">
+        <h2 className="text-2xl lg:text-4xl">faecher</h2>
+      </div>
 
-      <FaecherlistItem>Lorem, ipsum.</FaecherlistItem>
+      <FaecherlistItem>mathe.</FaecherlistItem>
+      <FaecherlistItem>physik.</FaecherlistItem>
+      <FaecherlistItem>informatik.</FaecherlistItem>
     </div>
   )
 }

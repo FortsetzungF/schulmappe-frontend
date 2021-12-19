@@ -14,7 +14,7 @@ export default function Layout({ children }) {
       <div className="lg:flex lg:flex-row">
         <Sidebar />
         
-        <div className="my-4 lg:ml-4 lg:basis-5/6 font-medium text-xl bg-gray-800">
+        <div className="my-4 lg:ml-4 lg:basis-5/6 font-medium text-xl">
           {children}
         </div>
       </div>

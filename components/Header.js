@@ -2,8 +2,8 @@ import Link from "@components/Link"
 
 export default function Header() {
   return(
-    <div className="bg-gray-800">
-      <h1 className="text-4xl lg:text-8xl font-extrabold italic uppercase">
+    <div>
+      <h1 className="text-4xl lg:text-8xl font-extrabold uppercase">
         <Link href="/app" noUnderline>schulmappe.</Link>
       </h1>
 
