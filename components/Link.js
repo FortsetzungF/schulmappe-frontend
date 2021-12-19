@@ -1,9 +1,18 @@
-import Link from "next/link"
+import NextLink from "next/link"
 
-export default function LinkComp({ children, href }) {
+export default function Link({ children, href, external }) {
+
+  if (external) {
+    return(
+      <NextLink href={href}>
+        <a className="hover:text-teal-400 transition-colors duration-200 after:content-['_↗']">{children}</a>
+      </NextLink>
+    )
+  }
+
   return(
-    <Link href={href}>
-      <a className="hover:text-red-700 transition-colors duration-200">{children}</a>
-    </Link>
+    <NextLink href={href}>
+      <a className="hover:text-teal-400 transition-colors duration-200">{children}</a>
+    </NextLink>
   )
 }
