@@ -1,15 +1,24 @@
+import useSWR from "swr";
 import FaecherlistItem from "@components/FaecherlistItem";
+import MSG from "@components/MSG"
 
 export default function Faecherlist() {
+  const fetcher = (...args) => fetch(...args).then(res => res.json())
+
+  const { data, error } = useSWR('/api/faecher', fetcher)
+
+  if (error) return <MSG error>faecher konnten nicht geladen werden</MSG>
+  if (!data) return <MSG>loading faecher</MSG>
+
   return(
     <div>
-      <div className="font-extrabold italic uppercase">
-        <h2 className="text-2xl lg:text-4xl">faecher</h2>
-      </div>
-
-      <FaecherlistItem>mathe</FaecherlistItem>
-      <FaecherlistItem>physik</FaecherlistItem>
-      <FaecherlistItem>informatik</FaecherlistItem>
+      <ul>
+        {data.faecher.map((fach) =>
+          <li>
+            <FaecherlistItem>{fach}</FaecherlistItem>
+          </li>
+        )}
+      </ul>
     </div>
   )
 }
