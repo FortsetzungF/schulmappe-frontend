@@ -10,15 +10,15 @@ export default function Link({ children, href, external, noUnderline }) {
 
   if (noUnderline) {
     return(
-      <NextLink href={href}>
-        <a className="hover:text-teal-400 transition-colors duration-200">{children}</a>
+      <NextLink href={href} className="hover:text-teal-400 transition-colors duration-200">
+        {children}
       </NextLink>
     )
   }
 
   return(
-    <NextLink href={href}>
-      <a className="hover:text-teal-400 transition-colors duration-200 underline underline-offset-4 decoration-teal-400">{children}</a>
+    <NextLink href={href} className="hover:text-teal-400 transition-colors duration-200 underline underline-offset-4 decoration-teal-400">
+      {children}
     </NextLink>
   )
 }
