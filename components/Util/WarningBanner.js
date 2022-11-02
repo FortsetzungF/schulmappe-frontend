@@ -30,4 +30,12 @@ export default function WarningBanner({ children, warning, fatalError, everythin
     )
   }
 
+  return(
+      <div className="bg-white p-2 my-4 text-black">
+        <div className="font-bold uppercase text-xl lg:text-2xl text-center">
+          {children}
+        </div>
+      </div>
+  )
+
 }
