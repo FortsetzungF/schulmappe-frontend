@@ -1,6 +1,6 @@
 import useSWR from "swr";
-import FaecherlistItem from "@components/FaecherlistItem";
-import MSG from "@components/MSG"
+import FaecherlistItem from "@/components/FaecherlistItem";
+import MSG from "@/components/MSG"
 
 export default function Faecherlist() {
   const fetcher = (...args) => fetch(...args).then(res => res.json())
