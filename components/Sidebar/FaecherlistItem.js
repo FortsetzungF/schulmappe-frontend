@@ -1,4 +1,4 @@
-import Link from "@/components/Link"
+import Link from "@/components/Util/Link"
 
 export default function FaecherlistItem({ children }) {
   const urlString = `/app/fach/${children}`

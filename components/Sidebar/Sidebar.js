@@ -1,4 +1,4 @@
-import Faecherlist from "@/components/Faecherlist";
+import Faecherlist from "@/components/Sidebar/Faecherlist";
 
 export default function Sidebar() {
   return(
